@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Para que el usuario pueda enviar datos-->
+    <!--Method es get, post, delete, pop, put, update-->
+    <!--La action es la ruta que va a recibir esos datos-->
+    <!--GET SE USAN CUANDO LA INFORMACION NO ES SENCIBLE -->
+    <form method="GET" action="">
+
+    </form>
+    <!--DATOS SENCIBLE, LO QUE SE HACE ES QUE SE ENCRIPTA, POR ESO NO ES LEIDO POR TERCERO-->
+    <form method="POST" action="" enctype="multipart/form-data">
+        <label for="username" >Nombre de usuario</label>
+        <input type="text" name="username" id="username" placeholder="Por ejemplo: barufe"/>
+        <label for="userage" >Edad de usuario</label>
+        <input type="number" name="userage" id="userage"/>
+        <label for="userpassword" >Password de usuario</label>
+        <input type="password" name="userpassword" id="userpassword"/>
+        <label for="userdate" >Fecha de nacimiento de usuario</label>
+        <input type="date" name="userdate" id="userdate" />
+        <label for="useremail" >Email de usuario</label>
+        <input type="email" name="useremail" id="useremail"/> <!--es como una caja de texto pero si le damos submit y el email no esta correcto va a indicar un error-->
+        <label for="userfile" >File de usuario</label>
+        <input type="file" name="userfile" id="userfile" /> <!--Si en nuestro form vamos a enviar algun file, hay que indicarle al formulario enctype="multipart/form-data"-->
+        <label for="usertime" >Time de usuario</label>
+        <input type="time" name="usertime" id="usertime"/>
+        
+        <select name="pais" id="" multiple>
+            <option value="es">España</option>
+            <option value="co">Colombia</option>
+            <option value="pe">Perú</option>
+            <option value="mx">México</option>
+            <option value="ch">Chile</option>
+            <option value="ar">Argentina</option>
+            <option value="cu">Cuba</option>
+            <option value="pr">Puerto Rico</option>
+        </select>
+
+        <input type="radio" name="comida" value="arroz" id="arroz">
+        <label for="arroz">Arroz</label>
+        <input type="radio" name="comida" value="pasta" id="pasta">
+        <label for="pasta">Pasta</label>
+        <input type="radio" name="comida" value="pollo" id="pollo">
+        <label for="pollo">Pollo</label>
+        <input type="radio" name="comida" value="pezcado" id="pezcado">
+        <label for="pezacd">Arroz</label>
+
+        <input type="checkbox" name="terminos" value="yes" id="terminos"><label for="terminos" required >Acepto los terminos y condiciones</label>
+
+        <input type="range" name="porcentaje" min="0" max="100">
+
+        <textarea name="comentario" id="comentario" cols="30" rows="10" minlength="10" maxlength="500" placeholder="Escribe aqui tu comentario..." required ></textarea>
+
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+</html>
