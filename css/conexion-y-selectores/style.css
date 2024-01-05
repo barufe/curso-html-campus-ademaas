@@ -1,0 +1,79 @@
+/*Estilos en cascadas, puede ser maleable, los espacios no van a tener ningun problema con los espacios aunque por convencion deben ir los espacios!*/
+
+/*SELECTORES*/
+/*Selectores de etiquetas (h1, h2, h3)*/
+
+h2 {
+  color: blue;
+  font-size: 72px;
+}
+
+p {
+  color: green;
+  font-size: 40px;
+}
+
+/*Selectores de clases ()*/
+
+.example {
+  color: pink;
+  font-size: 23px;
+}
+
+/*Selectores id*/
+#my-p {
+  color: aquamarine;
+  font-size: 67px;
+}
+/* Agrupacion de stylos*/
+h1,
+h2,
+h3,
+h4,
+h5 .title #my-title {
+  color: black;
+  font-size: 10px;
+}
+
+/*Por anidamiento*/
+.card a {
+  color: chocolate;
+}
+
+div ul li a {
+  color: black;
+}
+
+/*Selectores de atributo*/
+
+nav ul li a {
+  font-size: 72px;
+}
+a[href="/"] {
+  color: red;
+}
+/* El * lo que indica es que todos los estilos son aplicables a todas las etiquetas*/
+/* Gerarquia */
+
+h1 {
+  color: blue !important;
+}
+.title {
+  color: red;
+}
+#title {
+  color: green;
+}
+
+button {
+  background-color: brown;
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: blueviolet;
+}
+button:focus {
+  background-color: red;
+}

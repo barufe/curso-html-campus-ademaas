@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--Primera forma (Dentro de la etiqueta head)-->
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
+    <!--Esta es la mejor forma, linkear la hoja de stylos con html-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Segunda forma con el atributo style en la etiqueta que lo necesite "CSS en linea"-->
+    <a href="#">My first link</a>
+    <h1 style="background: green">Hello world</h1>
+    <h2>Probando los stylos de css en un archivo separado</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+      aspernatur obcaecati ipsam rem voluptas voluptatibus eos ratione itaque,
+      dolor enim, ut illo? Assumenda quam ab aliquid. Quaerat ab optio voluptas.
+    </p>
+    <p class="example">prueba 1</p>
+    <p class="example" id="my-p">Probando los selectores de clases</p>
+    <div class="card">
+      <h3>esta es mi carta</h3>
+      <a href="#">Read more</a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services"></a>Services</li>
+        <li><a href="/contact"></a>Contact</li>
+      </ul>
+    </nav>
+    <h1>Title</h1>
+    <h1 class="title">Title class</h1>
+    <h1 id="title">Title id</h1>
+
+    <button>Example</button>
+  </body>
+</html>
