@@ -1,0 +1,69 @@
+h1,
+p,
+div,
+h3,
+b {
+  border: 2px solid black;
+  /*cambia el comportamiento de las etiquetas*/
+  /* inline no deja espacio */
+  /* block deja espacio entre ellas */
+  /* none no muestra el contenido */
+  /* inline-block lo que hace es que la caja se comporte como un bloque pero para todo sin embargo se comporta como inline con la cajas que rodean nuestro elemento  */
+}
+
+h1 {
+  /* border desde el border hacia afuera se llama margin */
+  /* border desde el border hacia adentro se llama pading */
+  border: 5px dotted rgb(240, 13, 13);
+  margin: 10px;
+  padding: 50px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 1px;
+  border-top-right-radius: 1px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 100px;
+  /* color de los textos*/
+  color: red;
+  text-transform: uppercase;
+}
+
+div {
+  border: 5px;
+  border-color: aqua;
+  border-style: double;
+  padding: 25px;
+  padding-left: 50px;
+  padding-top: 29px;
+  padding-right: 70px;
+  padding-bottom: 100px;
+  border-radius: 20px 5px;
+  width: 300px;
+  height: auto;
+  margin: 5px;
+}
+
+p {
+  /* el 50 px es el top y el botton y el 10px es el left y el rigth */
+  border-top: 10px red double;
+  border-radius: 20px;
+  padding: 50px 10px;
+  margin: 20px 50px;
+  font-size: 10px;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 300px;
+  max-height: 300px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+b {
+  color: bisque;
+  background-color: gray;
+}
