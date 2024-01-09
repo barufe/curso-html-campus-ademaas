@@ -1,0 +1,57 @@
+/* Estilado de listas */
+
+ul {
+    /*elimina el breack point*/
+    list-style-type: none;
+    /* si le quieres dar una imagen al breack point*/
+    list-style-image: url();
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+a {
+    /* le da estilo a el texto*/
+    text-decoration: underline;
+    text-decoration-color: white;
+    /*indica el grosor de cada decoracion*/
+    text-decoration-thickness: 2px;
+    color: white;
+}
+a:hover {
+    background-color: bisque;
+    color: black;
+    cursor: grab;
+}
+li {
+    display: inline;
+}
+.exampleoverflow {
+    /* el texto se desborda por eso se usa ek overflow */
+    width: 300px;
+    height: 100px;
+    background-color: violet;
+    /* solo se pinta el scroll en el eje y no en el x */
+    overflow-y: scroll;
+}
+/* las cajas estan solapadas y ocupan el mismo espacio con el z index prioriza la que queremos que se vean*/
+.box1 {
+    height: 200px;
+    width: 100px;
+    background-color: azure;
+    overflow: hidden;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    z-index: 1; /*prioriza que se ve*/
+}
+.box2 {
+    height: 160px;
+    width: 120px;
+    background-color: blanchedalmond;
+    overflow: hidden;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+}
