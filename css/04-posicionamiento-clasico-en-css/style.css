@@ -1,0 +1,77 @@
+/* cuando indicas que la posicion es STATIC no puedes modificar su posicion natural utilizando los modificadores top, left, rigth y booton  */
+/* cuando indicas que la posicion es STATIC si puedes modificar su posicion natural utilizando los modificadores top, left, rigth y booton  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h2{
+    position: relative;
+    background-color: red;
+    padding: 15px;
+    top: 50px;
+    left: 250px;
+}
+p {
+    position: relative;
+    background-color: blue;
+    padding: 15px;
+    top: 50px;
+    right: 20px;
+}
+.card {
+    position: relative;
+    background-color: aquamarine;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+}
+/* absolute va a ser la posicion definida por su elemento padre */
+.card h3 {
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+}
+.card2 {
+    position: relative;
+    background-color: aquamarine;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+}
+/* fixed va a ser la posicion en la pagina en general ideal para una barra de busqueda que no queremos que se desaparezca */
+.card2 h3 {
+    position: fixed;
+    bottom: 0px;
+    left: 200px;
+}
+/* inherit lo que esta diciendo es que ereda la posicion de su padre en este caso relative */
+.card2 p {
+    position: inherit;
+}
+
+.card3{
+    position: relative;
+    background-color: aquamarine;
+    padding: 15px;
+    width: 2000px;
+    height: 1000px;
+    margin: 5px;
+}
+/* lo que hace sticky es que el texto baje con el scroll*/
+.card3 h3 {
+    position: sticky;
+    top: 0px;
+    left: 200px;
+}
+/* lo que esta diciendo es que va a flotar hacia la derecha */
+.card3 p {
+    float: right;
+    margin: 5px;
+}
+/* Evita que sigan apilandos las etiquetas a su lado */
+#cleaner {
+    clear: both;
+}
