@@ -1,0 +1,44 @@
+:root {
+    /*Zona de definicion de variables para quesean variables deben comenzar con --*/
+    /*Con el panel de variables controlamos todos los parametros del diseño*/
+    --color-primary: #0fa6f2;
+    --color-secundary: #cae5f2;
+    --color-bg: #4b4e52;
+    --font-title: Caramel;
+    --font-text: Sono;
+
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: space-around;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-primary);
+    font-family: var(--font-title);
+}
+
+.card {
+    background-color: var(--color-secundary);
+    font-family: var(--font-text);
+    width: 180px;
+    height: 400px;
+}
+
+@font-face {
+    font-family: Caramel;
+    src: url(./fonts/caramel.ttf);
+  }
+  @font-face {
+    font-family: Sono;
+    src: url(./fonts/sono.woff2);
+  }
+  
