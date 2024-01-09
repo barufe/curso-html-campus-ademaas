@@ -1,0 +1,14 @@
+h1 {
+  font-family: Caramel;
+}
+p {
+  font-family: Sono;
+}
+@font-face {
+  font-family: Caramel;
+  src: url(./fonts/caramel.ttf);
+}
+@font-face {
+  font-family: Sono;
+  src: url(./fonts/sono.woff2);
+}
