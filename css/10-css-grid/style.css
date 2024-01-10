@@ -1,0 +1,14 @@
+/* Que es el css grid una tecnica de diseño para crear una estructura de layaot mas compleja y flexible en la cual vamos a dividir en nuestra pagina una parte de su estructura en filas y columnas lo que denominamos (una rejilla)*/
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 10px;
+  
+}
+.grid-item {
+  background-color: bisque;
+  padding: 20px;
+  text-align: center;
+}
