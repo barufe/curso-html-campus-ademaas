@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- Indica que es un archivo html -->
+<html lang="es">
+  <!-- Indica el idioma en que se esta creando la pagina -->
+  <head>
+    <!-- Metadatos, son necesarios pero no se muestran en el documento -->
+    <meta charset="UTF-8" />
+    <!-- Conjunto de caracteres que usaremos, esto es para que se pinten las tildes o las ñ -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <!-- Asegura la compatibilidad con distintos navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- A aumentado el numero de dispositivo, nos aseguramos que el ancho de la pantalla es la escala inicial de nuestra dispositivo -->
+    <title>Curso de HTML</title>
+    <!-- Es el titulo que aparece en la pestaña -->
+    <style>
+      th {
+        border: 1px solid black;
+      }
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+  <nav>
+    <a href="texto.html" target="_blank">Textos</a><!--cuando el target _blank significa que va a abrir el documento en otra ventana, si no se coloca nada se entiende que es _self, tambien existen 2 mas _parent que lo que hace es cargarlo en la etiqueta padre y _top que lo carga en el body-->
+    <a href="multimedia.html" target="_blank">Multimedia</a>
+    <a href="formularios.html" target="_blank">Formularios</a>
+    <a href="estructura.html" target="_blank">Estructura</a>
+  </nav>
+    <!-- Todo lo que va a mostrar el navegador -->
+    <p>Hola mundo!</p>
+    <!--Escrituras-->
+
+    <!--Etiquetas de bloque, que saltan a la siguiente linea-->
+    <h1>Título 1</h1>
+    <!-- Titulo principal -->
+    <h2>Título 2</h2>
+    <h3>Título 3</h3>
+    <h4>Título 4</h4>
+    <h5>Título 5</h5>
+    <h6>Título 6</h6>
+    <!-- Menor importancia -->
+    <p>Párrafo</p>
+
+    <!--Etiquetas de bloque, que saltan a la siguiente linea-->
+    <i>Cursiva</i>
+    <b>Negrita</b> <strong>Negrita</strong>
+    <del>Tachado</del>
+    <u>Subrayado</u>
+    <sub>Subíndices</sub><sup>Superíndices</sup>
+    <small>Textos pequeños</small>
+    <br />
+    <!--Salto de linea-->
+    <hr />
+    <!--Dibuja una linea de separacion horizontal-->
+
+    <!--Ejmeplo de parrafo con cantidad de efectos-->
+
+    <h1>Título 1</h1>
+    <p>
+      Hola soy un párrafo con cantidad de efectos, Por ejemplo,
+      <i>esta frase está en cursiva</i>, mientras que
+      <strong>aquí estoy escribiendo </strong
+      ><b>en negrita de diferentes formas.</b> Forcemos ahora un salto de línea.
+      <br />
+      Escribamos un <del>tachado de texto</del> o mejor aún, <u>subrayádo</u>
+    </p>
+    <p>
+      En este párrafo, probemos a escribir un
+      <small>texto pequeño.</small> También podemos ver como resultan los
+      <sub>subíndices</sub> y <sup>superíndices</sup>
+    </p>
+    <p>Por último, terminamos dibujando una línea de división en horizontal:</p>
+    <hr />
+
+    <h1>Hora de practicar</h1>
+
+    <p>
+      En este primer parrafo vamos a mostrar que sabemos poner
+      <strong>negritas</strong>
+    </p>
+    <p>
+      Es hora de <i>probar otros textos</i> en este <u>nuevo párrafo</u> que
+      <br />
+      muestren <b>todas las opciones </b> que <del>vamos a aprender</del> hemos
+      aprendido.
+    </p>
+
+    <p>
+      Terminamos escribiendo <sub>un subíndice</sub> y también
+      <sup>un superíndice</sup>
+    </p>
+
+    <table>
+      <caption>
+        Titulo de la tabla
+      </caption>
+      <!--Titulo de la tabla-->
+      <thead>
+        <tr>
+          <th></th>
+          <th colspan="2">Juan</th>
+          <!--ENCABEZADO 1-->
+          <th colspan="2">Pedro</th>
+          <!--ENCABEZADO 2-->
+        </tr>
+        <tr>
+          <th>Fecha</th>
+          <th>Ingresos</th>
+          <th>Gastos</th>
+          <th>Ingresos</th>
+          <th>Gastos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>12/07/2022</th>
+          <th>120$</th>
+          <th>110$</th>
+          <th>130$</th>
+          <th>100$</th>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th colspan="2">10$</th>
+          <th colspan="2">30$</th>
+        </tr>
+      </tfoot>
+    </table>
+    <br>
+    <br>
+    <hr>
+    <strong>tabla de practica</strong>
+    <br>
+    <br>
+    <table>
+      <caption>
+        Registro de horas
+      </caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th colspan="2">Juan</th>
+          <th colspan="2">Raúl</th>
+          <th colspan="2">Sonia</th>
+          <th colspan="2">Pedro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Día</td>
+          <th>Entrada</th>
+          <th>Salida</th>
+          <th>Entrada</th>
+          <th>Salida</th>
+          <th>Entrada</th>
+          <th>Salida</th>
+          <th>Entrada</th>
+          <th>Salida</th>
+        </tr>
+        <tr>
+          <th>Lunes</th>
+          <td>09:00</td>
+          <td>16:00</td>
+          <td>08:30</td>
+          <td>15:30</td>
+          <td>09:00</td>
+          <td>16:00</td>
+          <td>08:30</td>
+          <td>15:30</td>
+        </tr>
+        <tr>
+          <th>Martes</th>
+          <td>09:00</td>
+          <td>16:00</td>
+          <td>08:30</td>
+          <td>15:30</td>
+          <td>09:00</td>
+          <td>16:00</td>
+          <td>08:30</td>
+          <td>15:30</td>
+        </tr>
+        <tr>
+          <th>Miercoles</th>
+          <td>09:00</td>
+          <td>16:00</td>
+          <td>08:30</td>
+          <td>15:30</td>
+          <td>09:00</td>
+          <td>16:00</td>
+          <td>08:30</td>
+          <td>15:30</td>
+        </tr>
+        <tr>
+          <th>Jueves</th>
+          <td>09:00</td>
+          <td>16:00</td>
+          <td>08:30</td>
+          <td>15:30</td>
+          <td>09:00</td>
+          <td>16:00</td>
+          <td>08:30</td>
+          <td>15:30</td>
+        </tr>
+        <tr>
+          <th>Viernes</th>
+          <td>09:00</td>
+          <td>16:00</td>
+          <td>08:30</td>
+          <td>15:30</td>
+          <td>09:00</td>
+          <td>16:00</td>
+          <td>08:30</td>
+          <td>15:30</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Fecha</th>
+          <td colspan="8">18/04/2022</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

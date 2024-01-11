@@ -1,0 +1,56 @@
+/* Propiedad de css que nos permite gestionar esta disposicion de los elementos de forma flexible, de cara a adaptar su posicion en funcion dek tamaño de la pantalla */
+
+/* Es una gran herramienta para colocar los elementos y hacer responsivas nuestras presentaciones */
+
+/* Como funcion? cuando dleclaramos a una selector como flex, sus propiedades solo afectaran a sus etiquetas hijos en primer orden*/
+
+/* Despues podemos repetir el proceso declarando a su vez como flex a cada una de sus etiquetas hijo, siendo una buena practica descender desde lo general hacia lo concreto */
+/* FLEX-direction 
+ - row los pone uno al lado del otro
+ - column los pone uno debajo del otro */
+
+/* JUSTIFY-content 
+ - Flex-start: justificado al inicio
+ - center: al centro
+ - Flex-end: justificado al final
+ - space-around: lo que va a hacer es maximizar el espacio de cada elemento a su alrededor
+ - space-between: lo que va a hacer es maximizar el espacio entre cadauno de los elementos
+ */
+
+/* ALIGN-Items
+ - Flex-start: arriba
+ - center : en el centro
+ - flex-end: abajo
+ */
+
+/*
+ Flex-wrap 
+ - no-wrap: osea que si es en fila los a a intentar achicar, pero no los va a bajar ni nada
+ - wrap: si les digo en fila los va a colocar en fila y si no cabe lo enviara a la siguiente
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+  margin: 5px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: orange;
+  width: 250px;
+  height: 250px;
+}
