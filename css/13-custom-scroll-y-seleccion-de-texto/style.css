@@ -1,0 +1,30 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #ccc;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: blue;
+}
+::selection {
+    color: red;
+    background: yellow;
+}
+/*compatibilidad con otros navegadores*/
+::-moz-selection {
+    color: red;
+    background: yellow;
+}
+
+.container {
+  height: 100px;
+  overflow-y: scroll;
+}
